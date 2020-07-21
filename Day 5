@@ -1,0 +1,13 @@
+let n=prompt("Enter the number: ");
+let arr=[]
+for(i=1;i<=n;i++)
+{ 
+arr.push(i);
+}
+console.log(`Array is ${arr}`);
+
+let odd=arr.filter(n=>n%2!=0);
+console.log(`Odd number from array are ${odd}`);
+
+let cubes=odd.map(n=>n*n*n);
+console.log(`Cubes of odd number are ${cubes}`);
